@@ -6,7 +6,6 @@ import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 
-import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.List;
 
