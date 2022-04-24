@@ -24,8 +24,4 @@ public record CustomerGraphQLQueryController(CustomerService customerService) im
         return customerService.getCustomersWithFilters(fullName, phoneNumber, createdAt);
     }
 
-    public CustomerResponse customerById(@NotNull String customerId) {
-        return customerService.getCustomersById(customerId);
-    }
-
 }
