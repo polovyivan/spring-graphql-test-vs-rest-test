@@ -1,0 +1,10 @@
+query {
+    getAllCustomers {
+                id
+                fullName
+                phoneNumber
+                address
+                createdAt
+
+                }
+}

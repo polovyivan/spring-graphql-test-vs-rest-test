@@ -1,0 +1,27 @@
+{
+  "data": {
+    "getAllCustomers": [
+      {
+        "id": "55e981b1-5136-49e8-8858-d33b8ad5d0a3",
+        "fullName": "Taren Lesch",
+        "phoneNumber": "223.806.4197",
+        "address": "Apt. 990 5030 Yundt Spring, Friesenfort, MI 52339-8035",
+        "createdAt": "2015-03-03"
+      },
+      {
+        "id": "e12d57cb-3f77-4d1e-8d57-34606d7c6240",
+        "fullName": "Timmy Johnson",
+        "phoneNumber": "1-669-210-0504",
+        "address": "Apt. 822 4347 Sipes Key, Port Hank, IL 29398",
+        "createdAt": "2019-01-14"
+      },
+      {
+        "id": "d483cf3b-4dcb-43c6-af78-328c73131920",
+        "fullName": "Ivan Polovyi",
+        "phoneNumber": "831.259.2365",
+        "address": "Apt. 843 399 Lachelle Crossing, New Eldenhaven, LA 63962-9260",
+        "createdAt": "2022-04-23"
+      }
+    ]
+  }
+}
