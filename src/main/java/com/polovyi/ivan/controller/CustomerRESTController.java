@@ -1,9 +1,9 @@
 package com.polovyi.ivan.controller;
 
-import com.polovyi.ivan.dto.CreateCustomerRequest;
-import com.polovyi.ivan.dto.CustomerResponse;
-import com.polovyi.ivan.dto.PartiallyUpdateCustomerRequest;
-import com.polovyi.ivan.dto.UpdateCustomerRequest;
+import com.polovyi.ivan.dto.request.CreateCustomerRequest;
+import com.polovyi.ivan.dto.response.CustomerResponse;
+import com.polovyi.ivan.dto.request.PartiallyUpdateCustomerRequest;
+import com.polovyi.ivan.dto.request.UpdateCustomerRequest;
 import com.polovyi.ivan.service.CustomerService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
@@ -60,7 +60,7 @@ public record CustomerRESTController(CustomerService customerService) {
     @PatchMapping(path = "/v1/customers/{customerId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void partiallyUpdateCustomer(@PathVariable String customerId,
-            @Valid @RequestBody PartiallyUpdateCustomerRequest partiallyUpdateCustomerRequest) {
+             @RequestBody PartiallyUpdateCustomerRequest partiallyUpdateCustomerRequest) {
         customerService.partiallyUpdateCustomer(customerId, partiallyUpdateCustomerRequest);
     }
 

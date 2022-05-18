@@ -1,4 +1,4 @@
-package com.polovyi.ivan.dto;
+package com.polovyi.ivan.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,15 +11,8 @@ import javax.validation.constraints.NotNull;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateCustomerRequest {
+public class PartiallyUpdateCustomerRequest {
 
-    @NotNull
-    private String fullName;
-
-    @NotNull
     private String phoneNumber;
-
-    @NotNull
-    private String address;
 
 }

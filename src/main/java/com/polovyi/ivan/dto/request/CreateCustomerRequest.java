@@ -1,4 +1,4 @@
-package com.polovyi.ivan.dto;
+package com.polovyi.ivan.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,13 +13,12 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 public class CreateCustomerRequest {
 
-    @NotNull
+    @NotNull(message = "Field fullName cannot be null")
     private String fullName;
 
-    @NotNull
+    @NotNull(message = "Field phoneNumber cannot be null")
     private String phoneNumber;
 
-    @NotNull
+    @NotNull(message = "Field address cannot be null")
     private String address;
-
 }

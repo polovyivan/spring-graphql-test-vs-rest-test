@@ -1,6 +1,6 @@
 package com.polovyi.ivan.entity;
 
-import com.polovyi.ivan.dto.CreateCustomerRequest;
+import com.polovyi.ivan.dto.request.CreateCustomerRequest;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

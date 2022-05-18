@@ -1,5 +1,5 @@
 query {
-    getAllCustomers {
+    allCustomers {
                 id
                 fullName
                 phoneNumber

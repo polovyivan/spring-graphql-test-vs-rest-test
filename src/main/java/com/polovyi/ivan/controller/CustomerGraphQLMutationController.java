@@ -1,9 +1,9 @@
 package com.polovyi.ivan.controller;
 
-import com.polovyi.ivan.dto.CreateCustomerRequest;
-import com.polovyi.ivan.dto.CustomerResponse;
-import com.polovyi.ivan.dto.PartiallyUpdateCustomerRequest;
-import com.polovyi.ivan.dto.UpdateCustomerRequest;
+import com.polovyi.ivan.dto.request.CreateCustomerRequest;
+import com.polovyi.ivan.dto.response.CustomerResponse;
+import com.polovyi.ivan.dto.request.PartiallyUpdateCustomerRequest;
+import com.polovyi.ivan.dto.request.UpdateCustomerRequest;
 import com.polovyi.ivan.service.CustomerService;
 import graphql.kickstart.tools.GraphQLMutationResolver;
 import lombok.RequiredArgsConstructor;

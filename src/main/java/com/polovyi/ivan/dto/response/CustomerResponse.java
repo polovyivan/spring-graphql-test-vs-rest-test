@@ -1,4 +1,4 @@
-package com.polovyi.ivan.dto;
+package com.polovyi.ivan.dto.response;
 
 import com.polovyi.ivan.entity.CustomerEntity;
 import lombok.AllArgsConstructor;
