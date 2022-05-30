@@ -57,7 +57,7 @@ public class GraphQLExceptionHandler implements GraphQLErrorHandler {
         }
         if (error instanceof CoercingParseValueException) {
             List<SourceLocation> locations = error.getLocations();
-            log.info("[ControllerAdvice] Processing MethodArgumentTypeMismatchException...");
+            log.info("[GraphQLExceptionHandler] Processing CoercingParseValueException...");
             String fieldName = StringUtils.replace(StringUtils.substringBetween(error.getMessage(), "Variable ", " has"),
                     "'", "");
             String message = String.format("Field %s has an invalid format.", fieldName);
