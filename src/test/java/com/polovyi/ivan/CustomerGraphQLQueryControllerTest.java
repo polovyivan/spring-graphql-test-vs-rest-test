@@ -294,7 +294,7 @@ public class CustomerGraphQLQueryControllerTest {
                   "createdAt": "%s"
                 }
                 """, fullName, phoneNumber, createdAt);
-        ObjectNode jsonNodes = new ObjectMapper().readValue(queryVariables, ObjectNode.class);
+        ObjectNode jsonNodes = mapper.readValue(queryVariables, ObjectNode.class);
         response = graphQLTestTemplate.perform(String.format(GRAPHQL_QUERY_REQUEST_PATH, "allCustomersWithFilters"),
                 jsonNodes);
     }
@@ -306,7 +306,7 @@ public class CustomerGraphQLQueryControllerTest {
                         "createCustomerRequest": %s
                     }
                 """, jsonString);
-        ObjectNode jsonNodes = new ObjectMapper().readValue(queryVariables, ObjectNode.class);
+        ObjectNode jsonNodes = mapper.readValue(queryVariables, ObjectNode.class);
         response = graphQLTestTemplate.perform(String.format(GRAPHQL_QUERY_REQUEST_PATH, "createCustomer"),
                 jsonNodes);
     }
@@ -319,7 +319,7 @@ public class CustomerGraphQLQueryControllerTest {
                         "updateCustomerRequest": %s
                     }
                 """, CUSTOMER_ID, jsonString);
-        ObjectNode jsonNodes = new ObjectMapper().readValue(queryVariables, ObjectNode.class);
+        ObjectNode jsonNodes = mapper.readValue(queryVariables, ObjectNode.class);
         response = graphQLTestTemplate.perform(String.format(GRAPHQL_QUERY_REQUEST_PATH, "updateCustomer"),
                 jsonNodes);
     }
@@ -332,7 +332,7 @@ public class CustomerGraphQLQueryControllerTest {
                         "partiallyUpdateCustomerRequest": %s
                     }
                 """, CUSTOMER_ID, jsonString);
-        ObjectNode jsonNodes = new ObjectMapper().readValue(queryVariables, ObjectNode.class);
+        ObjectNode jsonNodes = mapper.readValue(queryVariables, ObjectNode.class);
         response = graphQLTestTemplate.perform(String.format(GRAPHQL_QUERY_REQUEST_PATH, "partiallyUpdateCustomer"),
                 jsonNodes);
     }
@@ -343,7 +343,7 @@ public class CustomerGraphQLQueryControllerTest {
                         "customerId" : "%s"
                     }
                 """, CUSTOMER_ID);
-        ObjectNode jsonNodes = new ObjectMapper().readValue(queryVariables, ObjectNode.class);
+        ObjectNode jsonNodes = mapper.readValue(queryVariables, ObjectNode.class);
         response = graphQLTestTemplate.perform(String.format(GRAPHQL_QUERY_REQUEST_PATH, "deleteCustomer"),
                 jsonNodes);
     }
